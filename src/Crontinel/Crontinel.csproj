@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <RootNamespace>Crontinel</RootNamespace>
+    <AssemblyName>Crontinel</AssemblyName>
+    <Version>1.0.0</Version>
+    <Authors>Crontinel</Authors>
+    <Description>Crontinel monitoring SDK for .NET applications. Send cron, queue, and job monitoring events.</Description>
+    <PackageTags>cron;monitoring;scheduler;laravel;dotnet</PackageTags>
+    <RepositoryUrl>https://github.com/crontinel/dotnet-sdk</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
