@@ -306,5 +306,5 @@ public class CrontinelClient : IDisposable
     /// <summary>
     /// Placeholder for void MonitorScheduleAsync return type.
     /// </summary>
-    private struct VoidResult { }
+    public class VoidResult { }
 }
