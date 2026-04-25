@@ -21,7 +21,7 @@ public class MonitorScheduleResult<T>
     /// </summary>
     public int ExitCode { get; }
 
-    internal MonitorScheduleResult(T result, int durationMs, int exitCode)
+    public MonitorScheduleResult(T result, int durationMs, int exitCode)
     {
         Result = result;
         DurationMs = durationMs;

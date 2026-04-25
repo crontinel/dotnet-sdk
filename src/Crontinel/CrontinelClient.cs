@@ -280,7 +280,7 @@ public class CrontinelClient : IDisposable
 
         if (!response.IsSuccessStatusCode)
         {
-            var body = await response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+            var body = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
             throw new CrontinelException((int)response.StatusCode, body);
         }
     }

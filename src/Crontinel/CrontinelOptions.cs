@@ -27,6 +27,6 @@ public class CrontinelOptions
 
     internal string Version { get; } = "1.0.0";
 
-    internal string EffectiveUserAgent =>
+    public string EffectiveUserAgent =>
         UserAgent ?? $"crontinel-dotnet/{Version}";
 }
