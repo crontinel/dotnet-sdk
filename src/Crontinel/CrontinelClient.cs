@@ -268,7 +268,7 @@ public class CrontinelClient : IDisposable
             jsonrpc = "2.0",
             id = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
             method,
-            params = parameters,
+            @params = parameters,
         };
 
         var json = JsonSerializer.Serialize(requestBody, JsonOptions);
